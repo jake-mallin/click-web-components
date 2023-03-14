@@ -4,12 +4,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "prettier": "prettier --write .",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "dev": "cross-env NODE_OPTIONS='--inspect' next dev"
   },
   "dependencies": {
     "@next/font": "13.2.4",
@@ -24,6 +24,7 @@
   "devDependencies": {
     "@commitlint/cli": "^17.4.4",
     "@commitlint/config-conventional": "^17.4.4",
+    "cross-env": "^7.0.3",
     "eslint": "8.36.0",
     "eslint-config-next": "13.2.4",
     "husky": "^8.0.3",
