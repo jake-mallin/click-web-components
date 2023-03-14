@@ -1,5 +1,6 @@
 {
   "name": "click-web-components",
+  "author": "Jake Mallin",
   "version": "0.1.0",
   "private": true,
   "scripts": {
