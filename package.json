@@ -8,7 +8,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prettier": "prettier --write ."
+    "prettier": "prettier --write .",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@next/font": "13.2.4",
@@ -21,8 +22,11 @@
     "typescript": "4.9.5"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.4.4",
+    "@commitlint/config-conventional": "^17.4.4",
     "eslint": "8.36.0",
     "eslint-config-next": "13.2.4",
+    "husky": "^8.0.3",
     "prettier": "^2.8.4"
   }
 }
