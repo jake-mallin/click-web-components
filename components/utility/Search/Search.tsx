@@ -1,8 +1,10 @@
 export interface ISearch {
-  searchButtonText: string;
+  searchButtonText?: string;
 }
 
-const Search: React.FC<ISearch> = ({ searchButtonText }) => {
+const Search: React.FC<ISearch> = ({
+  searchButtonText = 'Search vehicles',
+}) => {
   return (
     <form className="flex flex-row items-center gap-x-6">
       <select className="select-box" placeholder="Any Make">

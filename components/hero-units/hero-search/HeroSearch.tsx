@@ -1,11 +1,11 @@
-import Search from '@/components/utility/Search/Search';
+// import Search from '@/components/utility/Search/Search';
 import SearchBudget from '@/components/utility/SearchBudget/SearchBudget';
 import Image from 'next/image';
 import styles from './HeroSearch.module.css';
 
 export interface IHeroSearch {
   heroMainHeading: string;
-  heroSubHeading: string;
+  heroSubHeading?: string;
 }
 
 const HeroSearch: React.FC<IHeroSearch> = ({
@@ -14,7 +14,7 @@ const HeroSearch: React.FC<IHeroSearch> = ({
 }) => {
   return (
     <div className="relative flex flex-row items-end justify-center w-screen min-h-[560px] h-[75vh] min-w-full overflow-hidden rounded-b-[48px]">
-      <div className="absolute pointer-events-none h-full w-full before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-gradient-to-t before:from-black before:to-transparent before:z-1">
+      <div className="absolute pointer-events-none h-full w-full before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-gradient-to-t before:from-black before:to-transparent before:z-1 before:block">
         <Image
           src="/heroUnit__bg.jpg"
           alt="Audi A3"
@@ -28,13 +28,15 @@ const HeroSearch: React.FC<IHeroSearch> = ({
           <h2 className="text-4xl text-white font-bold text-center mb-2 text-shadow-md">
             {heroMainHeading}
           </h2>
-          <em className="block text-2xl text-white not-italic text-center mb-8 text-shadow">
-            {heroSubHeading}
-          </em>
+          {heroSubHeading /* Makes this an optional field */ && (
+            <em className="block text-2xl text-white not-italic text-center mb-8 text-shadow">
+              {heroSubHeading}
+            </em>
+          )}
         </div>
         <div className={styles.heroSearch__form}>
           <SearchBudget searchButtonText={'Search'} />
-          <Search searchButtonText={'Search Vehicles'} />
+          {/* <Search /> */}
         </div>
       </div>
     </div>

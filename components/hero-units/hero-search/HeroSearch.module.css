@@ -1,1 +1,3 @@
-/*  */
+.heroSearch__message {
+  @apply block;
+}
