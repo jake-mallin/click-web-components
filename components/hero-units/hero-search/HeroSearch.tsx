@@ -33,8 +33,8 @@ const HeroSearch: React.FC<IHeroSearch> = ({
           </em>
         </div>
         <div className={styles.heroSearch__form}>
-          <SearchBudget />
-          <Search />
+          <SearchBudget searchButtonText={'Search'} />
+          <Search searchButtonText={'Search Vehicles'} />
         </div>
       </div>
     </div>
