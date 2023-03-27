@@ -1,6 +1,5 @@
 import Head from 'next/head';
-import HeroSearch from '../components/hero-units/hero-search/HeroSearch';
-import { mockHeroSearchProps } from '../components/hero-units/hero-search/HeroSearch.mocks';
+import HeroSlider from '../components/hero-units/hero-slider/HeroSlider';
 
 export default function Home() {
   return (
@@ -15,7 +14,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="">
-        <HeroSearch {...mockHeroSearchProps.base} />
+        <HeroSlider />
       </main>
     </>
   );
