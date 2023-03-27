@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import HeroSearch from '../components/hero-units/hero-search/HeroSearch';
 import HeroSlider from '../components/hero-units/hero-slider/HeroSlider';
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="">
+        <HeroSearch />
         <HeroSlider />
       </main>
     </>

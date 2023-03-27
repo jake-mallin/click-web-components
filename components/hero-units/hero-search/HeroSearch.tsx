@@ -4,7 +4,7 @@ import Image from 'next/image';
 import styles from './HeroSearch.module.css';
 
 export interface IHeroSearch {
-  heroMainHeading: string;
+  heroMainHeading?: string;
   heroSubHeading?: string;
 }
 
