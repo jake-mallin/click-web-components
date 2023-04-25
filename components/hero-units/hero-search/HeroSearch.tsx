@@ -13,7 +13,7 @@ const HeroSearch: React.FC<IHeroSearch> = ({
   heroSubHeading,
 }) => {
   return (
-    <div className="relative flex flex-row items-end justify-center w-screen min-h-[560px] h-[75vh] min-w-full overflow-hidden rounded-b-[48px]">
+    <div className="relative flex flex-row items-end justify-center w-screen min-h-[560px] h-[75vh] min-w-full overflow-hidden">
       <div className="absolute pointer-events-none h-full w-full before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-gradient-to-t before:from-black before:to-transparent before:z-1 before:block">
         <Image
           src="/heroUnit__bg.jpg"

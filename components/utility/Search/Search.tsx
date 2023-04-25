@@ -19,7 +19,9 @@ const Search: React.FC<ISearch> = ({
         <option>A4</option>
         <option>R8</option>
       </select>
-      <button className="btn-primary">{searchButtonText}</button>
+      <button className="btn-primary whitespace-nowrap" type="submit">
+        {searchButtonText}
+      </button>
     </form>
   );
 };

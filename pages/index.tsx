@@ -1,6 +1,7 @@
+// import HeroSearch from '@/components/hero-units/hero-search/HeroSearch';
+import HeroSlider from '@/components/hero-units/hero-slider/HeroSlider';
+import StepPromo from '@/components/promos/StepPromo/StepPromo';
 import Head from 'next/head';
-import HeroSearch from '../components/hero-units/hero-search/HeroSearch';
-import HeroSlider from '../components/hero-units/hero-slider/HeroSlider';
 
 export default function Home() {
   return (
@@ -15,8 +16,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="">
-        <HeroSearch />
+        {/* <HeroSearch /> */}
         <HeroSlider />
+        <StepPromo
+          promoTitle={`Looking to sell your vehicle?`}
+          subtext={`Alternatively bring the car to us and we'll pay you to do so`}
+        />
       </main>
     </>
   );

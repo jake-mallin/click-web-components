@@ -4,7 +4,7 @@ export interface ISearchBudget {
 
 const SearchBudget: React.FC<ISearchBudget> = ({ searchButtonText }) => {
   return (
-    <form className="flex flex-row items-center gap-x-6 mt-[56px]">
+    <form className="flex flex-row items-center gap-x-6 mt-[40px]">
       <div className="formgroup relative flex flex-row items-center gap-x-6">
         <select className="select-box" placeholder="Any make">
           <option>Audi</option>
@@ -47,7 +47,7 @@ const SearchBudget: React.FC<ISearchBudget> = ({ searchButtonText }) => {
           <option>£15,000</option>
         </select>
       </div>
-      <button className="btn-primary" type="submit">
+      <button className="btn-primary whitespace-nowrap" type="submit">
         {searchButtonText}
       </button>
     </form>
