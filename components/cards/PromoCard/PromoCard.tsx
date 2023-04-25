@@ -1,13 +1,13 @@
 import Image from 'next/image';
 
-interface Props {
+export interface IPromoCard {
   title?: string;
   body?: string;
   stepNo?: number;
   url: string;
 }
 
-const PromoCard: React.FC<Props> = (props) => {
+const PromoCard: React.FC<IPromoCard> = (props) => {
   const { url, title, body, stepNo } = props;
   return (
     <div className="relative rounded-2xl bg-white text-center py-8 px-4 shadow-2xl transition-all hover:translate-y-[-16px]">
